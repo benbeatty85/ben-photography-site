@@ -125,9 +125,6 @@ img {
 
 /*About Me*/
 
-.about-me {
-    margin-bottom: 20px;
-}
 
 .about-me-container {
     display: grid;
@@ -169,10 +166,13 @@ img {
     font-size: 16px;
 }
 
-.about-para-one, about-para-two {
-    padding: 20px 0;
+.about-para-one {
+    padding: 20px 0 20px 0;
 }
 
+.about-para-two {
+    padding: 0 0 20px 0;
+}
 
 
 
