@@ -6,13 +6,19 @@
 
 body {
     line-height: 1.5;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Tenor Sans', sans-serif;
     color: #414141;
     background: #fff;
 }
 
 img {
     max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 
@@ -37,7 +43,7 @@ img {
     font-size: 25px;
     text-align: center;
     text-transform: capitalize;
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 .hero h1 span {
@@ -88,7 +94,7 @@ img {
 }
 
 .welcome-middle h2 {
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
     color: #FF6A5C;
     padding: 1em;
 }
@@ -115,6 +121,61 @@ img {
     min-width: 100%;
     display: block;
 }
+
+
+/*About Me*/
+
+.about-me {
+    margin-bottom: 20px;
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns:[port-start] minmax(6em,1fr) [name-start] minmax(6em,1fr) [img-end] 2fr [port-end];
+}
+
+.about-img {
+    grid-column: port-start / img-end;
+    grid-row: 1 / 2;
+}
+
+.about-title {
+    grid-column: name-start / port-end;
+    grid-row: 1 / 2;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #FF6A5C;
+    align-self: flex-end;
+}
+
+.about-title span {
+    display: block;
+}
+
+.about-subtitle, .about-text {
+    grid-column: port-start / port-end;
+}
+
+.about-subtitle {
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.about-text {
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+.about-para-one, about-para-two {
+    padding: 20px 0;
+}
+
+
+
+
 
 
 
