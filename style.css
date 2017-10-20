@@ -211,7 +211,7 @@ img {
 .country-item figcaption {
     position: absolute;
     background: rgba(128,128,128,0.8);
-    top: 0;
+    top: 100%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -220,6 +220,15 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: top ease-in-out 350ms;
+}
+
+.country-item figcaption:hover {
+    top: 0;
+}
+
+.country-item figcaption:focus {
+    top: 0;
 }
 
 .country-title {
@@ -242,12 +251,16 @@ img {
     font-size: 20px;
     color: #fff;
     text-transform: capitalize;
+    border-bottom: 3px solid #FFD700;
+    align-self: center;
+    padding-top: 20px;
 }
 
 .country-link:hover {
-    border-bottom: 3px solid #FFD700;
-    align-self: center;
+    color: #F5F5DC;
 }
+
+
 
 
 
