@@ -189,9 +189,8 @@ img {
 
 /* Countries */
 
-
 .countries {
-    background: #414141;
+    background: #808080;
 }
 
 .countries h2 {
@@ -203,64 +202,83 @@ img {
     text-transform: capitalize;
 }
 
-.country-item {
-    position: relative;
-    overflow: hidden;
-}
-
-.country-item figcaption {
-    position: absolute;
-    background: rgba(128,128,128,0.8);
-    top: 100%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    color: #fff;
+.grid {
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.grid li {
+	display: flex;
+    flex-direction: column;
+	width: 400px;
+	position: relative;
+}
+
+.country-item {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+    max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.country-figcaption {
+    position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	background: #414141;
+    display: flex;
     justify-content: center;
-    transition: top ease-in-out 350ms;
 }
 
-.country-item figcaption:hover {
-    top: 0;
-}
-
-.country-item figcaption:focus {
-    top: 0;
-}
-
-.country-title {
-    text-transform: uppercase;
+.country-title a {
+    text-transform: capitalize;
     font-size: 30px;
-    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.country-title a:hover {
     color: #FFD700;
 }
 
-.country-item img {
-    display: block;
+.cs-style figure {
+	overflow: hidden;
 }
 
-.country-desc {
-    padding-bottom: 15px;
+.cs-style figure img {
+	transition: transform 0.4s;
 }
 
-.country-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    text-transform: capitalize;
-    border-bottom: 3px solid #FFD700;
-    align-self: center;
-    padding-top: 20px;
+.cs-style figure:hover img,
+.cs-style figure.cs-hover img {
+	transform: translateY(-20px);
 }
 
-.country-link:hover {
-    color: #F5F5DC;
+.cs-style figcaption {
+	height: 100px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-
+.cs-style figure:hover figcaption,
+.cs-style figure.cs-hover figcaption {
+	opacity: 1;
+	transform: translateY(40px);
+	transition: transform 0.4s, opacity 0.1s;
+}
 
 
 
