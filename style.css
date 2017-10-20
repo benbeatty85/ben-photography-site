@@ -214,7 +214,7 @@ img {
 .grid li {
 	display: flex;
     flex-direction: column;
-	width: 400px;
+	width: 300px;
 	position: relative;
 }
 
@@ -278,6 +278,13 @@ img {
 	opacity: 1;
 	transform: translateY(40px);
 	transition: transform 0.4s, opacity 0.1s;
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
