@@ -1,7 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -47,11 +55,11 @@ img {
 }
 
 .hero h1 span {
-    color: #FF6A5C;
+    color: #FFD700;
     display: block;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 30px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     padding: 50px;
 }
@@ -95,7 +103,7 @@ img {
 
 .welcome-middle h2 {
     font-family: 'Dosis', sans-serif;
-    color: #FF6A5C;
+    color: #FFD700;
     padding: 1em;
 }
 
@@ -125,6 +133,10 @@ img {
 
 /*About Me*/
 
+.about-me {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
 .about-me-container {
     display: grid;
@@ -143,7 +155,7 @@ img {
     font-size: 50px;
     text-transform: uppercase;
     padding: 20px;
-    color: #FF6A5C;
+    color: #FFD700;
     align-self: flex-end;
 }
 
@@ -173,6 +185,72 @@ img {
 .about-para-two {
     padding: 0 0 20px 0;
 }
+
+
+/* Countries */
+
+
+.countries {
+    background: #414141;
+}
+
+.countries h2 {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.country-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.country-item figcaption {
+    position: absolute;
+    background: rgba(128,128,128,0.8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.country-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 20px;
+    color: #FFD700;
+}
+
+.country-item img {
+    display: block;
+}
+
+.country-desc {
+    padding-bottom: 15px;
+}
+
+.country-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.country-link:hover {
+    border-bottom: 3px solid #FFD700;
+    align-self: center;
+}
+
+
+
 
 
 
