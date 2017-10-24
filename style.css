@@ -190,11 +190,11 @@ img {
 /* Countries */
 
 .countries {
-    background: #808080;
+    background: #414141;
 }
 
 .countries h2 {
-    color: #fff;
+    color: #FFD700;
     text-align: center;
     padding: 1em 0;
     font-family: 'Dosis', sans-serif;
@@ -202,8 +202,19 @@ img {
     text-transform: capitalize;
 }
 
+.continent-title {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    background: #414141;
+    width: 100vw;
+}
+
 .grid {
-	max-width: 600px;
+	max-width: 1200px;
 	margin: 0 auto;
 	list-style: none;
     display: flex;
@@ -233,7 +244,7 @@ img {
 	top: 0;
 	left: 0;
 	padding: 10px;
-	background: #808080;
+	background: #fff;
     display: flex;
     justify-content: center;
 }
@@ -241,7 +252,7 @@ img {
 .country-title a {
     text-transform: capitalize;
     font-size: 30px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
