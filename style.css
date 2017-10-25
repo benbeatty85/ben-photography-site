@@ -16,7 +16,7 @@ body {
     line-height: 1.5;
     font-family: 'Tenor Sans', sans-serif;
     color: #414141;
-    background: #fff;
+    background: #F5F5F5;
 }
 
 img {
@@ -196,7 +196,7 @@ img {
 /* Countries */
 
 .countries {
-    background: #fff;
+    background: #F5F5F5;
     text-align: center;
     color: #fff;
 }
@@ -207,7 +207,6 @@ img {
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
     text-transform: capitalize;
-    background: #414141;
     padding: 10px;
 }
 
@@ -322,6 +321,14 @@ input, textarea {
     cursor: pointer;
 }
 
+.button:hover {
+    color: #FFD700;
+}
+
+.button:focus {
+    color: #FFD700;
+}
+
 
 /*footer*/
 
@@ -367,16 +374,8 @@ footer {
 }
 
 .copyright span a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #FFD700;
-}
-
-.copyright span a:hover {
-    color: #fff;
-}
-
-.copyright span a:focus {
-    color: #fff;
 }
 
 
