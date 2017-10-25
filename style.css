@@ -29,6 +29,12 @@ img {
     max-width: 1200px;
 }
 
+.container-two {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 
 /*Hero*/
 
@@ -191,104 +197,99 @@ img {
 
 .countries {
     background: #414141;
+    text-align: center;
+    color: #fff;
+    padding: 3em 0;
 }
 
 .countries h2 {
     color: #FFD700;
     text-align: center;
-    padding: 1em 0;
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
     text-transform: capitalize;
 }
 
 .continent-title {
-    color: #fff;
+    color: #000;
     text-align: center;
-    padding: 1em 0;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 35px;
     text-transform: capitalize;
-    background: #414141;
-    width: 100vw;
-}
-
-.grid {
-	max-width: 1200px;
-	margin: 0 auto;
-	list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.grid li {
-	display: flex;
-    flex-direction: column;
-	width: 100vw;
-	position: relative;
+    padding: 1em 0;
 }
 
 .country-item {
-	margin: 0;
-	position: relative;
+    position: relative;
+    overflow: hidden;
 }
 
-.grid figure img {
-	display: block;
-	position: relative;
+.country-item img {
+    display: block;
 }
 
 .country-figcaption {
     position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px;
-	background: #fff;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    text-align: left;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    transition: top ease-in-out 300ms;
 }
 
-.country-title a {
+.country-item:hover figcaption {
+    top: 0;
+}
+
+.country-item:focus figcaption {
+    top: 0;
+}
+
+.country-title {
+    font-size: 2rem;
+    margin-bottom: auto;
     text-transform: capitalize;
-    font-size: 30px;
-    color: #000;
-    text-decoration: none;
-}
-
-.country-title a:hover {
     color: #FFD700;
 }
 
-.cs-style figure {
-	overflow: hidden;
+.country-desc {
+    padding-bottom: 2em;
 }
 
-.cs-style figure img {
-	transition: transform 1s;
+.country-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #fff;
+    align-self: flex-start;
 }
 
-.cs-style figure:hover img,
-.cs-style figure.cs-hover img {
-	transform: translateY(-20px);
+.country-link:hover {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
 }
 
-.cs-style figcaption {
-	height: 100px;
-	width: 100%;
-	top: auto;
-	bottom: 0;
-	opacity: 0;
-	transform: translateY(100%);
-	transition: transform 0.7s, opacity 0.1s 0.3s;
-}
 
-.cs-style figure:hover figcaption,
-.cs-style figure.cs-hover figcaption {
-	opacity: 1;
-	transform: translateY(40px);
-	transition: transform 0.4s, opacity 0.1s;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
