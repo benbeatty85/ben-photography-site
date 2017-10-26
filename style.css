@@ -125,7 +125,7 @@ img {
 @supports (display: grid) {
     .welcome {
         display: grid;
-        grid-template-columns: minmax(4em, 1fr) minmax(auto, 25em) minmax(4em, 1fr);
+        grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr);
     }
 }
 
@@ -152,6 +152,7 @@ img {
 .about-img {
     grid-column: port-start / img-end;
     grid-row: 1 / 2;
+    max-height: 500px;
 }
 
 .about-title {
@@ -196,7 +197,7 @@ img {
 /* Countries */
 
 .countries {
-    background: #F5F5F5;
+    background: rgba(0,0,0,0.4);
     text-align: center;
     color: #fff;
 }
@@ -208,10 +209,11 @@ img {
     font-size: 50px;
     text-transform: capitalize;
     padding: 10px;
+    background: rgba(0,0,0,0.7);
 }
 
 .continent-title {
-    color: #414141;
+    color: #fff;
     text-align: center;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 35px;
@@ -376,6 +378,37 @@ footer {
 .copyright span a {
     text-decoration: underline;
     color: #FFD700;
+}
+
+
+
+/* Media Queries */
+
+
+
+@media (min-width: 600px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h1 span {
+        font-size: 45px;
+        letter-spacing: 20px;
+    }
+    
+      .welcome-middle h2 {
+        font-size: 30px;
+    }
+    
+}
+
+
+@media (min-width: 1200px) {
+    .welcome-middle p {
+        font-size: 20px;
+    }
+
+
 }
 
 
