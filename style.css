@@ -48,6 +48,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 
@@ -86,6 +87,57 @@ img {
     width: 60%;
     height: 2px;
     background: #fff;
+}
+
+.menu-button {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background: transparent;
+    border: 0;
+    color: fff;
+    font-size: 60px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 10%;
+    z-index: 99;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: stretch;
+    background: #414141;
+    overflow: hidden;
+}
+
+nav li {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+nav li:hover {
+    background:rgba(255,215,0,0.5);
+}
+
+nav a {
+    font-size: 4rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 100%;
 }
 
 
