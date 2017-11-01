@@ -91,12 +91,14 @@ img {
 
 .menu-button {
     position: absolute;
-    top: 1em;
-    left: 1em;
-    background: transparent;
+    top: 0;
+    left: 0;
+    background: #414141;
+    border-radius: 15px;
     border: 0;
-    color: fff;
-    font-size: 60px;
+    color: #FFD700;
+    font-size: 50px;
+    padding: 10px;
 }
 
 nav {
@@ -128,6 +130,10 @@ nav li {
 }
 
 nav li:hover {
+    background:rgba(255,215,0,0.5);
+}
+
+nav li:focus {
     background:rgba(255,215,0,0.5);
 }
 
