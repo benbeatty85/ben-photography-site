@@ -99,12 +99,12 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background: #414141;
-    border-radius: 15px;
+    background: #F5F5F5;
     border: 0;
-    color: #FFD700;
+    color: darkgoldenrod;
     font-size: 50px;
     padding: 10px;
+    cursor: pointer;
 }
 
 
@@ -191,19 +191,19 @@ nav a {
 }
 
 .welcome-middle {
-    background: #414141;
-    color: #fff;
+    color: #414141;
     padding: 3em 5vw;
     text-align: center;
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: rgba(0,0,0,0.1);
 }
 
 .welcome-middle h2 {
     font-family: 'Dosis', sans-serif;
-    color: #FFD700;
+    color: darkgoldenrod;
     padding: 1em;
 }
 
@@ -211,7 +211,7 @@ nav a {
     content: '';
     width: 30%;
     height: 2px;
-    background: #fff;
+    background: #414141;
     display: block;
     margin: 1em auto 0;
 }
@@ -235,18 +235,20 @@ nav a {
 
 .about-me {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .about-me-container {
     display: grid;
     grid-template-columns:[port-start] minmax(6em,1fr) [name-start] minmax(6em,1fr) [img-end] 2fr [port-end];
+    grid-column-gap: 1em;
 }
 
 .about-img {
     grid-column: port-start / img-end;
     grid-row: 1 / 2;
     max-height: 500px;
+    width: 350px;
 }
 
 .about-title {
@@ -272,6 +274,8 @@ nav a {
     margin-top: 1em;
     text-transform: uppercase;
     font-size: 22px;
+    font-family: 'Dosis', sans-serif;
+    color: darkgoldenrod;
 }
 
 .about-text {
@@ -290,20 +294,19 @@ nav a {
 
 /* Countries */
 
+
 .countries {
-    background: rgba(0,0,0,0.4);
     text-align: center;
     color: #fff;
 }
 
 .countries h2 {
-    color: #FFD700;
+    color: darkgoldenrod;
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
     text-transform: capitalize;
-    padding: 10px;
-    background: rgba(0,0,0,0.7);
+    padding-bottom: 20px;
 }
 
 .continent-title {
@@ -318,6 +321,8 @@ nav a {
 .country-item {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .country-item img {
@@ -373,12 +378,27 @@ nav a {
     border-bottom: 2px solid #FFD700;
 }
 
+@supports (display: grid) {
+    .nations-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+
+}
+
 
 /* Contact Us*/
 
 
 .contact {
     padding: 2em 0;
+}
+
+.contact form {
+    padding: 20px;
 }
 
 .contact h2 {
@@ -479,19 +499,59 @@ footer {
 /* Media Queries */
 
 
-
 @media (min-width: 600px) {
     .hero h1 {
-        font-size: 35px;
+        font-size: 3vw;
     }
 
     .hero h1 span {
-        font-size: 45px;
+        font-size: 5vw;
         letter-spacing: 20px;
     }
     
       .welcome-middle h2 {
         font-size: 30px;
+    }
+    
+    .country-item img {
+        height: 300px;
+        width: auto;
+    }
+    
+    @supports (display: grid) {
+    .nations-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 900px) {
+        .about-text {
+        font-size: 1.2rem;
+    }
+    
+    .about-img {
+    grid-row: 1 / 4;
+    }
+    
+    .about-subtitle, .about-text {
+    grid-column: img-end / port-end;
+    margin: 0;
+    }
+    
+    .about-text {
+        padding-top: 50px;
+    }
+    
+    .about-layout {
+        grid-row: 1/4;
+    }
+    
+    @supports (display: grid) {
+    .nations-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     
 }
@@ -500,6 +560,27 @@ footer {
 @media (min-width: 1200px) {
     .welcome-middle p {
         font-size: 20px;
+    }
+    
+    .hero h1 {
+        font-size:30px;
+    }
+    
+    .hero h1 span {
+        font-size: 60px;
+    }
+    
+    .about-me-container {
+        grid-template-columns:[port-start] minmax(6em,1fr) [name-start] minmax(2em,0fr) [img-end] 2fr [port-end];
+    }
+    
+    .about-title {
+        font-size: 60px;
+        grid-column: port-start;
+    }
+    
+    .about-subtitle {
+        font-size: 40px;
     }
 
 
