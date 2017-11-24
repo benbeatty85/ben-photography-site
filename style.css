@@ -36,6 +36,12 @@ img {
     max-width: 1200px;
 }
 
+.container-three {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 
 /*Hero*/
 
@@ -247,7 +253,6 @@ nav a {
 .about-img {
     grid-column: port-start / img-end;
     grid-row: 1 / 2;
-    max-height: 500px;
     width: 350px;
 }
 
@@ -298,6 +303,7 @@ nav a {
 .countries {
     text-align: center;
     color: #fff;
+    padding-bottom: 20px;
 }
 
 .countries h2 {
@@ -387,15 +393,14 @@ nav a {
 }
 
 
-}
-
 
 /* Contact Us*/
 
-
 .contact {
-    padding: 2em 0;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.1);
 }
+
 
 .contact form {
     padding: 20px;
@@ -403,9 +408,11 @@ nav a {
 
 .contact h2 {
     text-align: center;
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
     text-transform: capitalize;
+    color: darkgoldenrod;
+    padding-top: 30px;
 }
 
 label {
@@ -425,6 +432,10 @@ input, textarea {
     color: #414141;
 }
 
+#message {
+    height: 15vh;
+}
+
 .button {
     display: block;
     width: 30%;
@@ -435,6 +446,7 @@ input, textarea {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+    max-width: 15vw;
 }
 
 .button:hover {
@@ -459,8 +471,10 @@ footer {
 
 .footer-paragraph {
     text-transform: capitalize;
-    font-size: 1.4em;
-    padding-bottom: 1.8em;
+    font-size: 35px;
+    padding-bottom: 1em;
+    color: darkgoldenrod;
+    font-family: 'Dosis', sans-serif;
 }
 
 .social-icons  {
@@ -526,6 +540,7 @@ footer {
     
 }
 
+
 @media (min-width: 900px) {
         .about-text {
         font-size: 1.2rem;
@@ -582,6 +597,18 @@ footer {
     .about-subtitle {
         font-size: 40px;
     }
+    
+    .social-icons  {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    padding: 20px
+}
+    
+    .social-icons a {
+    padding-right: 2em;
+    padding-left: 2em;
+}
 
 
 }
