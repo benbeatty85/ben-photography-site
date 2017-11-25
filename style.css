@@ -36,12 +36,6 @@ img {
     max-width: 1200px;
 }
 
-.container-three {
-    width: 70%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
 
 /*Hero*/
 
@@ -304,6 +298,7 @@ nav a {
     text-align: center;
     color: #fff;
     padding-bottom: 20px;
+    background-color: #fff;
 }
 
 .countries h2 {
@@ -398,12 +393,26 @@ nav a {
 
 .contact {
     padding: 15px;
-    background-color: rgba(0,0,0,0.1);
+    background-image: url(img/lisbon-pier.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
 }
 
+.form-center {
+    display: block;
+    text-align: center;
+}
 
-.contact form {
-    padding: 20px;
+.form-center form {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 550px;
 }
 
 .contact h2 {
@@ -567,6 +576,8 @@ footer {
     .nations-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    
     }
     
 }
