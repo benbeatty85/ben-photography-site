@@ -16,3 +16,15 @@ nav.addEventListener('click', function() {
     bodyClassList.remove('nav-open');
 })
 
+
+//Smooth Scrolling to top of page
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 2000 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".the-top").offset().top},"2000");return false})})
+
