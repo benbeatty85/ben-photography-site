@@ -28,3 +28,15 @@ $(window).scroll(function() {
 });
 $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".the-top").offset().top},"2000");return false})})
 
+
+
+//Floating in headline
+
+
+$(function() {
+    
+    setTimeout(function() {
+        $('.fly-in-text').removeClass('hidden');
+    }, 500);
+    
+}) ();
