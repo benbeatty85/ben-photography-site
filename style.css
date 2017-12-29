@@ -83,7 +83,7 @@ img {
     color: #FFD700;
     letter-spacing: 15px;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     opacity: 1;
     transition: all 2.5s ease;
     -moz-transition: all 2.5s ease;
@@ -514,6 +514,7 @@ input, textarea {
     border: 1px solid black;
     font-size: 1rem;
     color: #414141;
+    border-radius: 5px;
 }
 
 #message {
@@ -522,7 +523,6 @@ input, textarea {
 
 .button {
     display: block;
-    width: 30%;
     margin-top: 1em;
     margin-left: auto;
     background: #414141;
@@ -530,7 +530,8 @@ input, textarea {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
-    max-width: 15vw;
+    max-width: 20vw;
+    font-size: 12px;
 }
 
 .button:hover {
@@ -757,6 +758,10 @@ footer {
     .social-icons a {
     padding-right: 2em;
     padding-left: 2em;
+}
+    
+    .button {
+    max-width: 10vw;
 }
 
 
