@@ -1,0 +1,192 @@
+
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Tenor Sans', sans-serif;
+    color: #414141;
+    background: #F5F5F5;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container-two {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+/*Hero and main heading*/
+
+.hero {
+    background-image: url(canada/torontoHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heading {
+    background: rgba(0,0,0,0.6);
+    padding: 3em;
+    border: 1px white solid;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.heading-title {
+    color: goldenrod;
+    line-height: 1;
+    font-size: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/*Cities section*/
+
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.city a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: darkgoldenrod;
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+}
+
+/*effect-box*/
+
+a.effect-box:after,
+a.effect-box:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+	
+}
+
+a.effect-box:before {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+a.effect-box:after {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  -webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+/*Top of page button*/
+
+
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:rgba(0,0,0,0.6);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+
+.scroll:hover {
+	background:rgba(0,0,0,0.8);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+
+.scroll:focus {
+    background:rgba(0,0,0,0.8);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+
+.scroll .fa {
+	font-size:40px;
+    color: darkgoldenrod;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
