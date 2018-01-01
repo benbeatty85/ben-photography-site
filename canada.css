@@ -78,6 +78,32 @@ img {
     font-family: 'Dosis', sans-serif;
 }
 
+.home {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 4em;
+    color: darkgoldenrod;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.arrow a {
+    text-decoration: none;
+    color: white;
+    font-size: 4em;
+}
+
 
 /*Cities section*/
 
@@ -99,6 +125,7 @@ img {
 .city a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
@@ -113,7 +140,9 @@ img {
     visibility: hidden;
     transform: scaleX(0);
     -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
 
