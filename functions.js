@@ -46,6 +46,23 @@ $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("
 
 
 
+//fade in about section
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $('.hideme').each(function(i) {
+            var bottomOfObject = $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+            
+            if (bottomOfWindow > bottomOfObject) {
+                $(this).animate({'opacity':'1'}, 2200);
+            }
+        })
+    })
+})
+
+
+
 //Floating in headline
 
 

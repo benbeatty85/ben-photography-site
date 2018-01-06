@@ -365,6 +365,10 @@ nav a {
     padding: 0 0 20px 0;
 }
 
+.hideme {
+    opacity: 0;
+}
+
 
 /* Countries */
 
@@ -731,7 +735,7 @@ footer {
     }
     
     .fly-in-text li {
-        font-size: 60px;
+        font-size: 80px;
         letter-spacing: 30px;
     }
     
@@ -766,6 +770,13 @@ footer {
 
 
 }
+    
+    @media (min-width: 1500px) {
+        .fly-in-text li {
+        font-size: 100px;
+        letter-spacing: 50px;
+    }
+    }
 
 
 
