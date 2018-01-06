@@ -21,7 +21,7 @@ body {
     line-height: 1.5;
     font-family: 'Tenor Sans', sans-serif;
     color: #414141;
-    background: #F5F5F5;
+    background: #fff;
     overflow-x: hidden;
     height: 100%;
 }
@@ -90,13 +90,6 @@ img {
     color: #fff;
 }
 
-.home a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
 .home a:before {
     content: "";
     position: absolute;
@@ -114,6 +107,13 @@ img {
     transition: all 0.3s ease-in-out 0s;
 }
 
+.home a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 .arrow {
     display: flex;
     justify-content: center;
@@ -128,12 +128,50 @@ img {
 }
 
 
+/*Quote Section*/
+
+
+.quote-section {
+    background: #F5F5F5;
+}
+
+.quote {
+    padding: 3em 3em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+blockquote {
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-size: 1.5em;
+}
+
+.flex-quote {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-quote-text {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-person {
+    font-size: 1.5em;
+    color: darkgoldenrod;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+
 /*Cities section*/
 
 
 .cities {
     display: flex;
     justify-content: space-around;
+    background: #fff;
     padding: 2em;
 }
 
@@ -157,7 +195,7 @@ img {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: darkgoldenrod;
     bottom: 0;
     left: 0;
@@ -171,6 +209,7 @@ img {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
+
 
 
 /*Top of page button*/

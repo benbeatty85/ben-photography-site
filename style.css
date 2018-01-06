@@ -752,6 +752,10 @@ footer {
         font-size: 40px;
     }
     
+    .countries h2 {
+        font-size: 80px;
+    }
+    
     .social-icons  {
     display: flex;
     justify-content: center;
