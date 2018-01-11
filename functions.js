@@ -55,12 +55,20 @@ $(document).ready(function() {
             var bottomOfWindow = $(window).scrollTop() + $(window).height();
             
             if (bottomOfWindow > bottomOfObject) {
-                $(this).animate({'opacity':'1'}, 2200);
+                $(this).animate({'opacity':'1'}, 2500);
             }
         })
     })
 })
 
+
+//page loader
+
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function () {
+  overlay.style.display = 'none';
+});
 
 
 //Floating in headline

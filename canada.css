@@ -144,6 +144,7 @@ img {
 blockquote {
     text-align: center;
     padding-bottom: 1.5em;
+    padding-top: 20px;
     font-size: 1.5em;
 }
 
@@ -170,9 +171,14 @@ blockquote {
 
 .cities {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     background: #fff;
     padding: 2em;
+}
+
+.city {
+    padding: 1em;
 }
 
 .city a {
@@ -195,7 +201,7 @@ blockquote {
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 5px;
     background-color: darkgoldenrod;
     bottom: 0;
     left: 0;
@@ -209,6 +215,29 @@ blockquote {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
+
+
+/*Individual city section*/
+
+
+.city-section {
+    background: #F5F5F5;
+    padding: 2em;
+}
+
+.individual-city-title {
+    font-size: 4em;
+    color: darkgoldenrod;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding: 1em;
+}
+
+.individual-city-para {
+    font-size: 1.2em; 
+}
+
+
 
 
 
@@ -264,4 +293,16 @@ blockquote {
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s; 	
+}
+
+
+
+/*Media Queries*/
+
+
+@media (min-width: 600px) {
+    .cities {
+        justify-content: space-around;
+        flex-direction: row;
+    }
 }
