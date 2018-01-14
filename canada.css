@@ -189,14 +189,6 @@ blockquote {
     position: relative;
 }
 
-.city a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
 .city a:before {
     content: "";
     position: absolute;
@@ -214,6 +206,14 @@ blockquote {
     -ms-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+}
+
+.city a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 

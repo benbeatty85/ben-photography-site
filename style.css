@@ -354,7 +354,7 @@ nav a {
 
 .about-text {
     margin-top: 1em;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .about-para-one {
@@ -377,16 +377,63 @@ nav a {
     text-align: center;
     color: #fff;
     padding-bottom: 20px;
-    background-color: #fff;
+    background: #414141;
+}
+
+.quote {
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #fff;
+    width: 90vw;
+    padding: 2em;
+}
+
+blockquote {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1.5em;
+}
+
+.flex-quote-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-quote-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-quote-text {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-person {
+    font-size: 1.5em;
+    color: darkgoldenrod;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 
 .countries h2 {
     color: darkgoldenrod;
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 50px;
+    font-size: 80px;
     text-transform: capitalize;
-    padding-bottom: 20px;
+    padding: 40px 30px 10px 30px;
+}
+
+.countries h2::after {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: white;
+    display: block;
+    margin: 0.5em auto 0;
 }
 
 .continent-title {
@@ -470,19 +517,20 @@ nav a {
 
 /* Contact Us*/
 
+
 .contact {
-    padding: 15px;
-    background-image: url(img/lisbon-pier.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #f5f5f5;
     width: 100%;
-    background-attachment: fixed;
-    position: relative;
+}
+
+.contact-left img, .contact-right img {
+    display: none;
 }
 
 .form-center {
     display: block;
     text-align: center;
+    padding: 20px;
 }
 
 .form-center form {
@@ -554,6 +602,7 @@ input, textarea {
 footer {
     background: #414141;
     padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
     color: #fff;
 }
@@ -593,8 +642,38 @@ footer {
 }
 
 .copyright span a {
-    text-decoration: underline;
-    color: #FFD700;
+    color: darkgoldenrod;
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.copyright span a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: darkgoldenrod;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -10px;
+    visibility: hidden;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.copyright span a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 
@@ -746,6 +825,20 @@ footer {
     
     }
     
+    @supports (display: grid) {
+    .contact {
+        display: grid;
+        grid-template-columns: minmax(2em, 1fr) minmax(auto, 40em) minmax(2em, 1fr);
+    }
+}
+
+.contact-left img, .contact-right img {
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+}
+    
 }
 
 
@@ -782,7 +875,7 @@ footer {
     }
     
     .countries h2 {
-        font-size: 80px;
+        font-size: 100px;
     }
     
     .social-icons  {
