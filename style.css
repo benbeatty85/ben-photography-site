@@ -377,7 +377,10 @@ nav a {
     text-align: center;
     color: #fff;
     padding-bottom: 20px;
-    background: #414141;
+    background: url(img/country-background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .quote {
@@ -408,14 +411,17 @@ blockquote {
 .flex-quote-text {
     display: flex;
     justify-content: center;
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .quote-person {
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: darkgoldenrod;
     font-family: 'Dosis', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .countries h2 {
@@ -493,16 +499,38 @@ blockquote {
 
 .country-link {
     text-decoration: none;
-    color: #fff;
+    color: #FFD700;
     font-weight: bolder;
     font-size: 1.5rem;
-    border-bottom: 2px solid #fff;
     align-self: flex-start;
+    position: relative;
 }
 
-.country-link:hover {
-    color: #FFD700;
-    border-bottom: 2px solid #FFD700;
+.country-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #FFD700;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.country-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 @supports (display: grid) {
@@ -512,7 +540,6 @@ blockquote {
     }
     
 }
-
 
 
 /* Contact Us*/
