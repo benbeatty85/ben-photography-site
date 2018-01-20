@@ -51,11 +51,11 @@ $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("
 $(document).ready(function() {
     $(window).scroll(function() {
         $('.hideme').each(function(i) {
-            var bottomOfObject = $(this).outerHeight();
+            var bottomOfObject = $(this).innerHeight();
             var bottomOfWindow = $(window).scrollTop() + $(window).height();
             
             if (bottomOfWindow > bottomOfObject) {
-                $(this).animate({'opacity':'1'}, 2500);
+                $(this).animate({'opacity':'1'}, 1700);
             }
         })
     })
