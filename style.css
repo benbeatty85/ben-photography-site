@@ -377,7 +377,7 @@ nav a {
     text-align: center;
     color: #fff;
     padding-bottom: 20px;
-    background: #fff;
+    background-color: #fff;
 }
 
 .countries-title-div {
@@ -632,6 +632,9 @@ footer {
     color: #FFD700;
     cursor: pointer;
     transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
 }
 
 .copyright {
@@ -874,6 +877,11 @@ footer {
     
     .countries h2 {
         font-size: 100px;
+    }
+    
+    .nations-grid {
+        grid-gap: 2em;
+        padding-top: 30px;
     }
     
     .social-icons  {
