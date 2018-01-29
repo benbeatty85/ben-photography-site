@@ -16,6 +16,38 @@ nav.addEventListener('click', function() {
     bodyClassList.remove('nav-open');
 })
 
+//Contact form
+
+function getId(id) { //Don't have to type this everytime we use this
+    return document.getElementById(id);
+}
+
+function submitForm() {
+    getId("mybtn").disabled = true;
+    getId("status").innerHTML = "Your message is being sent ...";
+    
+    var formdata = new FormData();
+    
+    formdata.append("n", getId("n").value);
+    formdata.append("e", getId("e").value);
+    formdata.append("m", getId("m").value);
+    
+    var ajax = new XMLHttpRequest();
+    
+    ajax.open("POST", "form.php");
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            if (ajax.responseText == "success") {
+                getId("my_form").innerHTML = '<h2>Thanks ' + getId("n").value + ' , your message has been sent.</h2>';
+            } else {
+                getId("status").innerHTML = ajax.responseText;
+                getId("mybtn").disabled = false;
+            }
+        }
+    }
+    ajax.send(formdata);
+}
+
 //Smooth Scrolling for navigation
 
 

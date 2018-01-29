@@ -224,21 +224,22 @@
             </div>
                 <div class="form-center">
                     <h2>Contact us</h2>
-                    <form action="">
+                    <form id="my_form" onsubmit="submitForm(); return false;">
 
-                        <label class="name">Name:
-                            <input type="text" id="name">
+                        <label class="name">
+                            <input type="text" placeholder="Name" id="n" required>
                         </label>
 
-                        <label class="email">Email:
-                            <input type="email">
+                        <label class="email">
+                            <input type="email" id="e" placeholder="Email Address" required>
                         </label>
 
-                        <label message="message">Message:
-                            <textarea name="" id="message"></textarea>
+                        <label class="message">
+                            <textarea name="" id="m" placeholder="Write your message here" rows="10" required></textarea>
                         </label>
 
-                        <input class="button" type="submit" value="Send">
+                        <input class="button" id="mybtn" type="submit" value="Submit">
+                        <span id="status"></span>
 
                     </form>
                 </div>
