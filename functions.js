@@ -23,6 +23,7 @@ function getId(id) { //Don't have to type this everytime we use this
 }
 
 function submitForm() {
+    console.log("Working");
     getId("mybtn").disabled = true;
     getId("status").innerHTML = "Your message is being sent ...";
     
@@ -33,6 +34,8 @@ function submitForm() {
     formdata.append("m", getId("m").value);
     
     var ajax = new XMLHttpRequest();
+    
+    console.log("Working" + ajax);
     
     ajax.open("POST", "form.php");
     ajax.onreadystatechange = function () {

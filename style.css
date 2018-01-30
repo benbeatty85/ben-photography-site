@@ -170,16 +170,35 @@ img {
 /*Navigation slide in and out*/
 
 
-.menu-button {
+.menu-button i {
     position: absolute;
     top: 0;
     left: 0;
-    background: #F5F5F5;
     border: 0;
-    color: darkgoldenrod;
-    font-size: 50px;
+    color: #fff;
+    font-size: 90px;
     padding: 10px;
     cursor: pointer;
+     transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+    transition-property: color, transform;
+    -webkit-transition-property: color, transform;
+}
+
+.menu-button i:hover {
+    color: rgba(255,215,0,0.5);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.menu-button i:focus {
+    color: rgba(255,215,0,0.5);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 
 
@@ -253,7 +272,7 @@ nav a {
     display: block;
 }
 
-.nav-open .plane {
+.nav-open .globe {
     display: none;
 }
 
