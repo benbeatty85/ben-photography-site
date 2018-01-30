@@ -175,8 +175,8 @@ img {
     top: 0;
     left: 0;
     border: 0;
+    font-size: 60px;
     color: #fff;
-    font-size: 90px;
     padding: 10px;
     cursor: pointer;
      transition-duration: 500ms;
@@ -812,8 +812,13 @@ footer {
 
 
 @media (min-width: 900px) {
-        .about-text {
-        font-size: 1.2rem;
+    
+    .menu-button i {
+    font-size: 80px;
+}
+    
+    .about-text {
+    font-size: 1.2rem;
     }
     
     .about-img {
@@ -859,6 +864,11 @@ footer {
 
 
 @media (min-width: 1200px) {
+    
+    .menu-button i {
+    font-size: 100px;
+}
+    
     .welcome-middle p {
         font-size: 20px;
     }
