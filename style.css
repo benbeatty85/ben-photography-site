@@ -177,7 +177,7 @@ img {
     border: 0;
     font-size: 60px;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
      transition-duration: 500ms;
     -webkit-transition-duration: 500ms;
@@ -200,7 +200,6 @@ img {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
-
 
 nav {
     position: absolute;
@@ -310,18 +309,8 @@ nav a {
     margin: 1em auto 0;
 }
 
-@supports (display: grid) {
-    .welcome {
-        display: grid;
-        grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr);
-    }
-}
-
 .welcome-left img, .welcome-right img {
-    object-fit: cover;
-    min-height: 100%;
-    min-width: 100%;
-    display: block;
+   display: none;
 }
 
 
@@ -858,6 +847,20 @@ footer {
     min-height: 100%;
     min-width: 100%;
     display: block;
+}
+    
+.welcome-left img, .welcome-right img {
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+}
+    
+@supports (display: grid) {
+    .welcome {
+        display: grid;
+        grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr);
+    }
 }
     
 }
