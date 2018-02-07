@@ -388,16 +388,8 @@ nav a {
     background-color: #fff;
 }
 
-.countries-title-div {
-    background: url(img/destinations-background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .countries-title {
-    color: #FFD700;
+    color: #000;
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
@@ -825,6 +817,18 @@ footer {
     
     .about-layout {
         grid-row: 1/4;
+    }
+    
+    .countries-title-div {
+    background: url(img/destinations-background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    
+    .countries-title {
+        color: #FFD700;
     }
     
     @supports (display: grid) {
