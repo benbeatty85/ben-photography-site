@@ -51,6 +51,7 @@ function submitForm() {
     ajax.send(formdata);
 }
 
+
 //Smooth Scrolling for navigation
 
 
@@ -116,6 +117,7 @@ $(function() {
     }, 500);
     
 }) ();
+
 
 
 

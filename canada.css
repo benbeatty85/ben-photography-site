@@ -58,6 +58,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
+    border-top: 15px rgba(255,215,0,0.5) solid;
 }
 
 .heading {
@@ -127,6 +128,55 @@ img {
     font-size: 4em;
 }
 
+/*Make arrow bounce*/
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.6s infinite linear;
+  -o-animation: bounce 0.6s infinite linear;
+  -webkit-animation: bounce 0.6s infinite linear;
+  animation: bounce 0.6s infinite linear;
+}
+
+.bounce:hover,:focus {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
 
 /*Quote Section*/
 
@@ -148,12 +198,17 @@ blockquote {
     font-size: 1.5em;
 }
 
-.flex-quote {
+.quote-left {
     display: flex;
     justify-content: flex-start;
 }
 
-.flex-quote-text {
+.quote-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quote-text {
     display: flex;
     justify-content: center;
 }
