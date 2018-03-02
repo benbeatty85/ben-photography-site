@@ -187,7 +187,7 @@ img {
 
 .menu-button i:hover {
     color: rgba(255,215,0,0.5);
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
@@ -209,7 +209,13 @@ nav {
     right: 20%;
     z-index: 99;
     transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transition: transform ease-in-out 250ms;
+    -webkit-transition: transform ease-in-out 250ms;
+    -ms-transition: transform ease-in-out 250ms;
+    -o-transition: transform ease-in-out 250ms;
 }
 
 .nav-open {
@@ -219,9 +225,15 @@ nav {
 
 .nav-open nav {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
 
 .nav-open .container-all {
+    -webkit-transform: translateX(80%);
+    -o-transform: translateX(80%);
+    -ms-transform: translateX(80%);
     transform: translateX(80%);
 }
 

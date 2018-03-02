@@ -1,5 +1,5 @@
 
-*, *:before, *:after {
+*, *::before, *::after {
   /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
   -webkit-box-sizing: border-box; 
 
@@ -59,6 +59,7 @@ img {
     justify-content: center;
     position: relative;
     border-top: 15px rgba(255,215,0,0.5) solid;
+    z-index: 2;
 }
 
 .heading {
@@ -133,10 +134,10 @@ img {
 .bounce {
   display: inline-block;
   position: relative;
-  -moz-animation: bounce 0.6s infinite linear;
-  -o-animation: bounce 0.6s infinite linear;
-  -webkit-animation: bounce 0.6s infinite linear;
-  animation: bounce 0.6s infinite linear;
+  -moz-animation: bounce 700ms infinite linear;
+  -o-animation: bounce 700ms infinite linear;
+  -webkit-animation: bounce 700ms infinite linear;
+  animation: bounce 700ms infinite linear;
 }
 
 .bounce:hover,:focus {
@@ -182,19 +183,41 @@ img {
 
 
 .quote-section {
-    background: #F5F5F5;
+    background: #FFFFFF;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: visible;
+    width: 100%;
+    height: 350px;
+    background: rgba(255,215,0,0.5);
+    z-index: -1;
+    -webkit-transform: skewX(50deg);
+    -moz-transform: skewX(50deg);
+    -ms-transform: skewX(50deg);
+    -o-transform: skewX(50deg);
+    transform: skewX(50deg);
 }
 
 .quote {
     padding: 3em 3em;
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
 }
 
 blockquote {
     text-align: center;
     padding-bottom: 1.5em;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 1.5em;
 }
 
@@ -214,61 +237,27 @@ blockquote {
 }
 
 .quote-person {
-    font-size: 1.5em;
-    color: darkgoldenrod;
+    font-size: 1.7em;
     font-family: 'Dosis', sans-serif;
     text-align: center;
 }
 
-
-/*Cities section*/
-
-
-.cities {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    padding: 2em;
+.quote-person::before {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: #414141;
+    display: block;
+    margin: 0 auto;
 }
 
-.city {
-    padding: 1em;
-}
-
-.city a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: darkgoldenrod;
-    font-size: 2em;
-    position: relative;
-}
-
-.city a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: darkgoldenrod;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.city a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    transform: scaleX(1);
+.quote-person::after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background: #414141;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -276,8 +265,9 @@ blockquote {
 
 
 .city-section {
-    background: #F5F5F5;
-    padding: 2em;
+    background: #fff;
+    padding: 1.5em;
+    margin-top: 50px;
 }
 
 .individual-city-title {
@@ -285,15 +275,20 @@ blockquote {
     color: darkgoldenrod;
     font-family: 'Dosis', sans-serif;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0 1em 0;
+}
+
+.individual-city-title::before {
+    content: '';
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255,215,0,0.9);
 }
 
 .individual-city-para {
     font-size: 1.2em; 
 }
-
-
-
 
 
 /*Top of page button*/
@@ -356,8 +351,15 @@ blockquote {
 
 
 @media (min-width: 600px) {
-    .cities {
-        justify-content: space-around;
-        flex-direction: row;
+    .city-section {
+        margin-top: 0;
     }
 }
+
+
+
+
+
+
+
+
