@@ -275,7 +275,7 @@ blockquote {
     color: darkgoldenrod;
     font-family: 'Dosis', sans-serif;
     text-align: center;
-    padding: 1em 0 1em 0;
+    padding: 0.5em 0 0.5em 0;
 }
 
 .individual-city-title::before {
@@ -354,6 +354,12 @@ blockquote {
     .city-section {
         margin-top: 0;
     }
+    
+        .individual-city-title {
+        font-size: 7em;
+    }
+
+        
 }
 
 
