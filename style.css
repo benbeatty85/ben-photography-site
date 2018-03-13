@@ -406,8 +406,7 @@ nav a {
     font-family: 'Tenor Sans', sans-serif;
     font-size: 50px;
     text-transform: capitalize;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
 }
