@@ -94,7 +94,8 @@ $(window).scroll(function() {
 
 
     $(document).ready(function() {
-        $(window).bind("load", function () {
+        $(window).bind("load", function (e) {
+            e.preventDefault();
             $('.fly-in-text').removeClass('hidden');
         })
     }) 
