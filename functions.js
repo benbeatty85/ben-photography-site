@@ -93,13 +93,11 @@ $(window).scroll(function() {
     //Floating in headline
 
 
-    $(function() {
-
-        setTimeout(function() {
+    $(document).ready(function() {
+        $(window).bind("load", function () {
             $('.fly-in-text').removeClass('hidden');
-        }, 500);
-
-    }) ();
+        })
+    }) 
 
 
 
