@@ -73,33 +73,12 @@ $(window).scroll(function() {
     })
 
 
-
-    //fade in about section
-
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            $('.hideme').each(function(i) {
-                var bottomOfObject = $(this).innerHeight();
-                var bottomOfWindow = $(window).scrollTop() + $(window).height();
-
-                if (bottomOfWindow > bottomOfObject) {
-                    $(this).animate({'opacity':'1'}, 1700);
-                }
-            })
-        })
-    })
-
-
     //Floating in headline
 
 
     $(document).ready(function() {
-        $(window).bind("load", function (e) {
-            e.preventDefault();
+        $(window).bind("load", function () {
             $('.fly-in-text').removeClass('hidden');
         })
     }) 
-
-
-
 
