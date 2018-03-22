@@ -522,10 +522,10 @@ nav a {
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     -o-transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .country-link:hover:before {

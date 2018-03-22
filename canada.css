@@ -447,10 +447,10 @@ footer {
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     -o-transform: scaleX(0);
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -ms-transition: all 0.4s ease-in-out 0s;
-    -o-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .copyright span a:hover:before {
@@ -460,6 +460,7 @@ footer {
     -o-transform: scaleX(1);
     transform: scaleX(1);
 }
+
 
 /*Media Queries*/
 
@@ -523,6 +524,7 @@ footer {
         padding-left: 45px;
         padding-top: 0;
     }
+    
     
 }
 
