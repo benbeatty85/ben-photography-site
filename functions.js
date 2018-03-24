@@ -50,6 +50,15 @@ $(window).scroll(function() {
     });
 
 
+    //Changing Hamburger menu
+
+(function () {
+	$('.toggle').on('click', function() {
+		$('.hamburger-menu').toggleClass('animate');
+	})
+})();
+
+
 
 /*Code that is used on Home page*/
 
