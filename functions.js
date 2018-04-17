@@ -1,17 +1,6 @@
 /*Code that is used on multiple pages*/
 
 
-    //Sticky navbar for top of page
-
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 10) {
-    $('.home').addClass('sticky-navbar');
-  } else {
-    $('.home').removeClass('sticky-navbar');
-  }
-});
-
-
     //Smooth Scrolling for navigation
 
 

@@ -147,8 +147,6 @@ img {
 }
 
 
-
-
 /*Hamburger transitioning menu*/
 
 
@@ -156,7 +154,7 @@ img {
 .hamburger-menu:after,
 .hamburger-menu:before {
     width: 60px;
-	height: 10px;
+	height: 5px;
 }
 
 .hamburger-menu {
