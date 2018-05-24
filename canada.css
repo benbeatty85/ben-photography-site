@@ -64,6 +64,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -224,7 +225,7 @@ img {
 
 .arrow a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 4em;
 }
 
@@ -282,13 +283,9 @@ img {
 
 
 .quote-section {
-    background: url(canada/canada-quote-background.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: white;
     height: 550px;
     width: 100%;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,18 +293,10 @@ img {
     font-family: 'Maven Pro', sans-serif;
 }
 
-.quote-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(155,155,155,0.8);
-}
-
 .quote {
     padding: 3em 3em;
     max-width: 1400px;
     margin: 0 auto;
-    position: relative;
 }
 
 blockquote {
