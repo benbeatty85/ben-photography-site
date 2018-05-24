@@ -216,6 +216,8 @@ img {
     font-family: 'Dosis', sans-serif;
 }
 
+/*Make arrow bounce*/
+
 .arrow {
     display: flex;
     justify-content: center;
@@ -228,8 +230,6 @@ img {
     color: white;
     font-size: 4em;
 }
-
-/*Make arrow bounce*/
 
 .bounce {
   display: inline-block;
@@ -335,10 +335,11 @@ blockquote {
 
 
 .city-section {
-    background: #F5F5F5;
+    background-color: rgba(255,215,0,0.4);
     padding: 20px;
     position: relative;
     z-index: 1;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .city-two {
@@ -347,18 +348,29 @@ blockquote {
 
 .individual-city-title {
     font-size: 4.5em;
-    color: darkgoldenrod;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+    color: black;
     text-align: center;
-    padding: 0.5em 0 0.5em 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .individual-city-title::before {
-    content: '';
-    font-family: FontAwesome;
-    display: inline-block;
-    padding-right: 10px;
-    color: rgba(255,215,0,0.9);
+    content: '';
+    width: 40%;
+    height: 6px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.individual-city-title::after {
+    content: '';
+    width: 40%;
+    height: 6px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
 }
 
  .para-wrapper {
@@ -578,7 +590,11 @@ footer {
     }
     
     .individual-city {
-        padding-bottom: 6em;
+        padding-bottom: 1em;
+    }
+    
+    .individual-city-title {
+        padding: 0px;
     }
     
     .para-wrapper {
@@ -588,10 +604,6 @@ footer {
         width: 90vw;
         margin: 0 auto;
         font-size: 1.5em;
-        padding-bottom: 1em;
-        background-color: #fff;
-        border: 3px solid darkgoldenrod;
-        border-radius: 15px;
         padding: 2em;
         line-height: 1.7em;
     }
