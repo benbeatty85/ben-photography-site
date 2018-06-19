@@ -80,9 +80,8 @@ img {
     left: -150px;
     bottom: 0;
     width: 150px;
-    border-right: 2px dashed black;
     padding: 30px;
-    background-color: white;
+    background-color: lightyellow;
     z-index: 100;
     transition: 300ms ease-in-out;
     -webkit-transition: 300ms ease-in-out;
@@ -91,7 +90,7 @@ img {
 .sidebar li {
     font-size: 20px;
     margin-bottom: 20px;
-    list-style-type: circle;
+    list-style-type: none;
     text-transform: capitalize;
 }
 
@@ -110,7 +109,7 @@ img {
 }
 
 .sidebar li a:hover {
-    color: darkgoldenrod;
+    color: rgba(0,0,0,0.6);
 }
 
 .toggle {
