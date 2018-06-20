@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Tenor Sans', sans-serif;
+    background-color: darkgoldenrod;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbs-up {
+    font-size: 20em;
+    color: white;
+}
+
+.form-submission-message {
+    font-size: 2em;
+    color: white;
+}
+
+a {
+    padding: 3em;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    max-width: 20vw;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background, color 300ms ease-in-out;
+    -webkit-transition: background 300ms ease-in-out;
+}
+
+button:hover {
+    background-color: blanchedalmond;
+}
+
+
