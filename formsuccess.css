@@ -36,6 +36,9 @@ body {
 .form-submission-message {
     font-size: 2em;
     color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
 }
 
 a {
@@ -58,6 +61,14 @@ button {
 
 button:hover {
     background-color: blanchedalmond;
+}
+
+
+
+@media (max-width: 900px) {
+    button {
+        min-width: 60vw;
+    }
 }
 
 
