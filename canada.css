@@ -562,6 +562,90 @@ footer {
     transform: scaleX(1);
 }
 
+/*Top of page button*/
+
+
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:0;
+	right:0;	
+    z-index: 999;
+}
+
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:rgba(0,0,0,0.6);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+
+.scroll:hover {
+	background:rgba(0,0,0,0.8);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+
+.scroll:focus {
+    background:rgba(0,0,0,0.8);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+
+.scroll .fa {
+	font-size:40px;
+    color: darkgoldenrod;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+
+/*Loading Spinner*/
+
+
+#overlay {
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0, .9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #fff;
+    border-top-color: darkgoldenrod;
+    border-radius: 100%;
+    margin-top: 400px;
+    animation: round 1s linear infinite;
+}
+    
+    @keyframes round {
+        from{transform: rotate(0deg)}
+        to {transform: rotate(360deg)}
+    }
+
 
 /*Media Queries*/
 
