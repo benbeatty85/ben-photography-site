@@ -354,6 +354,10 @@ blockquote {
     padding-bottom: 1em;
 }
 
+.fuji-title {
+    font-size: 3em;
+}
+
 .individual-city-title::before {
     content: '';
     width: 40%;
@@ -657,19 +661,21 @@ footer {
     
     .individual-city-title {
         font-size: 7em;
+    }  
+    
+    .fuji-title {
+    font-size: 4.7em;
     }
-
-        
 }
 
 @media (min-width: 900px) {
     
     .quote-text {
-        font-size: 2.3em;
+        font-size: 1.7em;
     }
     
     .quote-person {
-        font-size: 3em;
+        font-size: 2.4em;
     }
     
     .individual-city {
@@ -679,6 +685,10 @@ footer {
     .individual-city-title {
         padding: 0px;
     }
+    
+      .fuji-title {
+    font-size: 7em;
+}
     
     .para-wrapper {
         display: flex;

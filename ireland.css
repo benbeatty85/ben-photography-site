@@ -341,10 +341,6 @@ blockquote {
     font-family: 'Tenor Sans', sans-serif;
 }
 
-.city-two {
-    margin-top: -40px;
-}
-
 .individual-city-title {
     font-size: 4.5em;
     font-family: 'Maven Pro', sans-serif;
@@ -656,7 +652,7 @@ footer {
     }
     
     .individual-city-title {
-        font-size: 7em;
+        font-size: 5em;
     }
 
         
@@ -665,11 +661,11 @@ footer {
 @media (min-width: 900px) {
     
     .quote-text {
-        font-size: 2.3em;
+        font-size: 2em;
     }
     
     .quote-person {
-        font-size: 3em;
+        font-size: 2.7em;
     }
     
     .individual-city {

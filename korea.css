@@ -354,6 +354,10 @@ blockquote {
     padding-bottom: 1em;
 }
 
+.sejong-title {
+    font-size: 4em;
+    }
+
 .individual-city-title::before {
     content: '';
     width: 40%;
@@ -658,6 +662,10 @@ footer {
     .individual-city-title {
         font-size: 7em;
     }
+    
+    .sejong-title {
+    font-size: 4.7em;
+    }
 
         
 }
@@ -665,11 +673,11 @@ footer {
 @media (min-width: 900px) {
     
     .quote-text {
-        font-size: 2.3em;
+        font-size: 1.7em;
     }
     
     .quote-person {
-        font-size: 3em;
+        font-size: 2.7em;
     }
     
     .individual-city {
@@ -678,6 +686,10 @@ footer {
     
     .individual-city-title {
         padding: 0px;
+    }
+    
+      .sejong-title {
+    font-size: 6em;
     }
     
     .para-wrapper {
