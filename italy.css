@@ -689,6 +689,10 @@ footer {
     .individual-city-title {
         font-size: 7em;
     }
+    
+    .home-button-mobile {
+        display: none;
+    }
 
         
 }

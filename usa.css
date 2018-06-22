@@ -694,6 +694,10 @@ footer {
     .vegas-title {
     font-size: 5em;
 }
+    
+    .home-button-mobile {
+        display: none;
+    }
 
         
 }

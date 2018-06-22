@@ -698,6 +698,10 @@ footer {
     .sejong-title {
     font-size: 4.7em;
     }
+    
+    .home-button-mobile {
+        display: none;
+    }
 
         
 }

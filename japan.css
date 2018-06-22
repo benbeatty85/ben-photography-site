@@ -698,6 +698,10 @@ footer {
     .fuji-title {
     font-size: 4.7em;
     }
+    
+    .home-button-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 900px) {
