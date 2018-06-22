@@ -93,6 +93,8 @@ img {
     margin-bottom: 15px;
     list-style-type: none;
     text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
 }
 
 .sidebar li:first-child {

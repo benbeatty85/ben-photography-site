@@ -83,9 +83,9 @@ img {
     padding: 20px;
     background-color: lightyellow;
     z-index: 100;
+    line-height: 1;
     transition: 300ms ease-in-out;
     -webkit-transition: 300ms ease-in-out;
-    overflow: hidden;
 }
 
 .sidebar li {
@@ -93,6 +93,8 @@ img {
     margin-bottom: 15px;
     list-style-type: none;
     text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
 }
 
 .sidebar li:first-child {
