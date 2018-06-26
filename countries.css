@@ -285,15 +285,19 @@ img {
 /*Quote Section*/
 
 
-.quote-section {
+.quote-section, .quote-section-small {
     background-color: white;
-    height: 350px;
+    height: 550px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     font-family: 'Maven Pro', sans-serif;
+}
+
+.quote-section-small {
+    height: 350px;
 }
 
 .quote {
@@ -718,8 +722,8 @@ footer {
         font-size: 100px;
     }
     
-    .quote-section {
-    height: 550px;
+    .quote-section-small {
+    height: 450px;
 }
     
     .quote-text {
