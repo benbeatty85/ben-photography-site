@@ -62,11 +62,12 @@ img {
 .hero {
     background-image: url(canada/torontoHeader.jpg);
     background-repeat: no-repeat;
-    background-size: 100vmax 100vmax;
-    background-position: center center;
-    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
