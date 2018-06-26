@@ -261,22 +261,22 @@ nav li {
 
 nav li:hover {
     background:rgba(255,215,0,0.3);
-    transition-duration: 500ms;
-    -webkit-transition-duration: 500ms;
+    transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
     transition-property: background;
     -webkit-transition-property: background;
-    transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
 }
 
 nav li:focus {
     background:rgba(255,215,0,0.3);
-    transition-duration: 500ms;
-    -webkit-transition-duration: 500ms;
+    transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
     transition-property: background;
     -webkit-transition-property: background;
-    transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
 }
 
 nav a {
