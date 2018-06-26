@@ -1,0 +1,16 @@
+
+.hero {
+    background-image: url(heroImages/franceHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-top: 5px rgba(255,215,0,0.5) solid;
+}
