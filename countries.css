@@ -287,7 +287,7 @@ img {
 
 .quote-section {
     background-color: white;
-    height: 550px;
+    height: 350px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -359,7 +359,7 @@ blockquote {
 }
 
 .individual-city-title-large {
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 .large-title-tablet {
@@ -717,6 +717,10 @@ footer {
     .heading-title {
         font-size: 100px;
     }
+    
+    .quote-section {
+    height: 550px;
+}
     
     .quote-text {
         font-size: 1.7em;
