@@ -79,8 +79,8 @@ img {
     top:0;
     left: -150px;
     bottom: 0;
-    width: 150px;
     line-height: 1;
+    width: 150px;
     padding: 20px;
     background-color: lightyellow;
     z-index: 100;
@@ -213,7 +213,7 @@ img {
 .heading-title {
     color: goldenrod;
     line-height: 1;
-    font-size: 100px;
+    font-size: 60px;
     text-align: center;
     text-transform: capitalize;
     font-family: 'Dosis', sans-serif;
@@ -306,11 +306,11 @@ blockquote {
     text-align: center;
     padding-bottom: 1.5em;
     padding-top: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .quote-person {
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-family: 'Dosis', sans-serif;
     text-align: center;
 }
@@ -349,7 +349,7 @@ blockquote {
     margin-top: -40px;
 }
 
-.individual-city-title {
+.individual-city-title, .individual-city-title-large {
     font-size: 4.5em;
     font-family: 'Maven Pro', sans-serif;
     color: black;
@@ -358,7 +358,15 @@ blockquote {
     padding-bottom: 1em;
 }
 
-.individual-city-title::before {
+.individual-city-title-large {
+    font-size: 3em;
+}
+
+.large-title-tablet {
+    font-size: 4em;
+}
+
+.individual-city-title::before, .individual-city-title-large::before {
     content: '';
     width: 40%;
     height: 6px;
@@ -367,7 +375,7 @@ blockquote {
     margin: 0 auto;
 }
 
-.individual-city-title::after {
+.individual-city-title::after, .individual-city-title-large::after {
     content: '';
     width: 40%;
     height: 6px;
@@ -689,23 +697,33 @@ footer {
     
     .individual-city-title {
         font-size: 7em;
+    }  
+    
+    .individual-city-title-large {
+        font-size: 4.5em;
     }
+    
+      .large-title-tablet {
+    font-size: 5em;
+}
     
     .home-button-mobile {
         display: none;
     }
-
-        
 }
 
 @media (min-width: 900px) {
     
+    .heading-title {
+        font-size: 100px;
+    }
+    
     .quote-text {
-        font-size: 2.3em;
+        font-size: 1.7em;
     }
     
     .quote-person {
-        font-size: 3em;
+        font-size: 2.4em;
     }
     
     .individual-city {
@@ -716,6 +734,11 @@ footer {
         padding: 0px;
     }
     
+    .individual-city-title-large {
+        font-size: 6em;
+        padding: 0px;
+    }
+      
     .para-wrapper {
         display: flex;
         flex-direction: row;
