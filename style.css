@@ -59,20 +59,16 @@ img {
 .hero h1 {
     color: #fff;
     line-height: 1;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     text-transform: capitalize;
-    font-family: 'Dosis', sans-serif;
     position: relative;
-    top: -2em;
 }
 
 /*Animated headline*/
 
 .ml6 {
   position: relative;
-  font-weight: 900;
-  font-size: 5em;
 }
 
 .ml6 .text-wrapper {
@@ -92,7 +88,9 @@ img {
   font-size: 1em;
   font-family: 'Maven Pro', sans-serif;
   color: #FFD700;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
+  background: rgba(155,155,155,0.5);
+  padding: 10px;
 }
 
 
@@ -770,7 +768,7 @@ footer {
     
     .letters {
   font-size: 2em;
-  letter-spacing: 30px;
+  letter-spacing: 20px;
 }
     
     .about-text {
@@ -837,11 +835,6 @@ footer {
     
     .menu-button i {
     font-size: 100px;
-}
-    
-     .letters {
-  font-size: 2.1em;
-  letter-spacing: 40px;
 }
     
     .welcome-middle p {
