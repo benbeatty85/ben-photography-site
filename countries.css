@@ -623,7 +623,7 @@ footer {
 #overlay {
     height: 100%;
     width:100%;
-    background: rgba(0,0,0, .9);
+    background: black;
     position: fixed;
     left: 0;
     top: 0;
