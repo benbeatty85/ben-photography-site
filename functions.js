@@ -74,8 +74,9 @@
 
 // Wrap every letter in a span
 
-$('.ml6 .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+$(document).ready(function(){
+    $('.ml6 .letters').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
 anime.timeline({loop: true})
@@ -92,5 +93,9 @@ anime.timeline({loop: true})
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 100000
+    delay: 3000
   });
+    
+});
+
+
