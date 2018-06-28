@@ -57,12 +57,34 @@ img {
 
 
 .hero h1 {
-    color: #fff;
     line-height: 1;
     font-size: 40px;
     text-align: center;
     text-transform: capitalize;
     position: relative;
+}
+
+.travel-text {
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+
+.travel-text::before {
+    content: '';
+    width: 50%;
+    height: 4px;
+    background: darkgoldenrod;
+    display: block;
+    margin: 0 auto 1em;
+}
+
+.travel-text::after {
+    content: '';
+    width: 50%;
+    height: 4px;
+    background: darkgoldenrod;
+    display: block;
+    margin: 1em auto 0;
 }
 
 /*Animated headline*/
@@ -75,7 +97,6 @@ img {
   position: relative;
   display: inline-block;
   padding-top: 3em;
-  padding-bottom: 0.1em;
   overflow: hidden;
 }
 
@@ -85,12 +106,10 @@ img {
 }
 
 .letters {
-  font-size: 1em;
-  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.7em;
+  font-family: 'Poiret One', sans-serif;
   color: #FFD700;
   letter-spacing: 10px;
-  background: rgba(155,155,155,0.5);
-  padding: 10px;
 }
 
 
