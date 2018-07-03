@@ -342,8 +342,8 @@ blockquote {
     font-family: 'Maven Pro', sans-serif;
     color: black;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .individual-city-title-large {
