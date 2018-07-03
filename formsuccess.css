@@ -21,12 +21,6 @@ body {
     font-family: 'Tenor Sans', sans-serif;
     overflow-x: hidden;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-top: 10px rgba(255,215,0,0.5) solid;
-    border-bottom: 10px rgba(255,215,0,0.5) solid;
 }
 
 .background {
@@ -41,9 +35,10 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    border-top: 10px rgba(255,215,0,0.5) solid;
+    border-bottom: 10px rgba(255,215,0,0.5) solid;
 }
 
 .thumbs-up {
@@ -60,11 +55,10 @@ body {
     text-shadow: 2px 2px #000;
 }
 
-a {
+.button {
     padding: 3em;
     text-align: center;
-    align-self: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .form-button {
