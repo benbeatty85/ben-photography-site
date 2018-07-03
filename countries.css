@@ -629,6 +629,7 @@ footer {
     top: 0;
     display: flex;
     justify-content:center;
+    z-index: 1000;
 }
 
 .spinner {
@@ -718,6 +719,10 @@ footer {
         font-size: 2.4em;
     }
     
+    .para-wrapper {
+        padding-top: 2em;
+    }
+    
     .individual-city {
         padding-bottom: 1em;
     }
@@ -730,28 +735,31 @@ footer {
         font-size: 6em;
         padding: 0px;
     }
-      
-    .para-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 90vw;
-        margin: 0 auto;
-        font-size: 1.5em;
-        padding: 2em;
-        line-height: 1.7em;
-    }
-    
-    .paragraph-two {
-        padding-left: 45px;
-        padding-top: 0;
-    }
     
     
 }
 
 
 @media (min-width: 1200px) {
+    
+     .para-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 1.5em;
+        line-height: 1.7em;
+    }
+    
+    .paragraph-two {
+        padding-left: 45px;
+        padding-top: 30px;
+    }
+    
+     .paragraph-one {
+        padding-top: 30px;
+    }
     
     
     .social-icons  {
