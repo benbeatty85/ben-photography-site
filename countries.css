@@ -326,11 +326,11 @@ blockquote {
 
 
 .city-section {
-    background-color: rgba(255,215,0,0.4);
+    background-color: whitesmoke;
     padding: 20px;
     position: relative;
     z-index: 1;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .city-two {
@@ -358,7 +358,7 @@ blockquote {
     content: '';
     width: 40%;
     height: 6px;
-    background-color: white;
+    background-color: rgba(255,215,0,0.7);
     display: block;
     margin: 0 auto;
 }
@@ -367,7 +367,7 @@ blockquote {
     content: '';
     width: 40%;
     height: 6px;
-    background-color: white;
+    background-color: rgba(255,215,0,0.7);
     display: block;
     margin: 0 auto;
 }
