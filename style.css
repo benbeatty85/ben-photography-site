@@ -556,14 +556,18 @@ input, textarea {
     cursor: pointer;
     max-width: 20vw;
     font-size: 12px;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
 }
 
 .button:hover {
-    color: #FFD700;
+    background: darkgoldenrod;
 }
 
 .button:focus {
-    color: #FFD700;
+    background: darkgoldenrod;
 }
 
 
