@@ -32,7 +32,7 @@
 
     //page loader
 
-    var overlay = document.getElementById("overlay");
+    var overlay = document.getElementById("loader");
 
     window.addEventListener('load', function () {
       overlay.style.display = 'none';
