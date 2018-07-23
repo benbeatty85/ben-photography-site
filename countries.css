@@ -206,6 +206,9 @@ img {
 /*Make arrow bounce*/
 
 .arrow {
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
     display: flex;
     justify-content: center;
     position: absolute;
