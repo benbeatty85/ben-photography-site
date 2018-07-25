@@ -257,11 +257,12 @@ nav a {
     color: #414141;
     padding: 3em 5vw;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(0,0,0,0.1);
+    background: white;
+    font-family: 'lato', sans-serif;
 }
 
 .welcome-middle h2 {
