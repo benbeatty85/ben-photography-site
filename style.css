@@ -69,24 +69,6 @@ img {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 }
 
-.travel-text::before {
-    content: '';
-    width: 50%;
-    height: 4px;
-    background: darkgoldenrod;
-    display: block;
-    margin: 0 auto 1em;
-}
-
-.travel-text::after {
-    content: '';
-    width: 50%;
-    height: 4px;
-    background: darkgoldenrod;
-    display: block;
-    margin: 1em auto 0;
-}
-
 /*Animated headline*/
 
 .ml6 {
